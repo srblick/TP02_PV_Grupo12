@@ -1,0 +1,24 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color:rgb(144, 185, 238);
+    text-align:center;
+    margin:60px
+}
+
+h1{
+    font-size: xx-large;
+    text-align: center;
+
+} 
+
+#entrada{
+    width: 40%;
+    height:2px;
+    padding: 30px;
+    font-size: 60px;
+}
+/* se usa # porque se menciona su id*/
+#salida {
+    font-size: xx-large;
+   
+}
