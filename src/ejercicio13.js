@@ -2,16 +2,13 @@
 //que reciba un arreglo numérico como parámetro e imprima cada elemento en una línea a parte. 
 
 
-//Recoremos el arreglo numerico
-const mostrarArreglo = (arreglo)=>{
-    for (let i=0; i<arreglo.length; i++){
-        //mostramos por consola cada numero
-        console.log(arreglo[i]);
+function mostrarArreglo(arreglo){
+    //const arreglo= document.getElementById("arreglo").value;
+    let resultado="";
+    for (let i=0; i<arreglo.length;i++){
+        resultado +=arreglo[i]+"<br>";
     }
-};
-
- 
-//Declaramos variable
-let numeros=[4,6,8,10];
-//llamamos a la funcion
-mostrarArreglo(numeros);
+//haciendo global a la funcion
+    document.getElementById("resultado").innerHTML=resultado;
+}
+Object.assign(globalThis,{mostrarArreglo});
