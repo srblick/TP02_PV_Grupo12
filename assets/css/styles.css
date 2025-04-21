@@ -1,0 +1,74 @@
+/* Estilos generales del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh; /* Altura completa de la ventana */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centrado vertical */
+    align-items: center;     /* Centrado horizontal */
+    background-color: #f7f7f7;
+  }
+  
+  /* Estilo del párrafo */
+  p {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+    text-align: center;
+  }
+  
+  /* Estilo del botón */
+  button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Animación de aparición (fade-in) */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-5px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animar-texto {
+    animation: fadeIn 0.5s ease;
+  }
+  
+  input {
+    padding: 10px;
+    width: 250px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin-top: 15px;
+  }
+  
+  .contenedor-salida {
+    border: 2px dashed #888;
+    padding: 20px;
+    margin: 0 auto 15px;
+    min-height: 40px;
+    width: 300px; /* 🔒 Ancho fijo */
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    background-color: rgb(217, 248, 215);
+  }
+  
+  .fondo-alerta {
+    background-color: #ff7c7c; /* fondo rosado cuando supera 20 caracteres */
+  }
+  
